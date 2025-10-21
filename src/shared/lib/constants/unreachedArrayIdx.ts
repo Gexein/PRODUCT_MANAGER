@@ -1,0 +1,1 @@
+export const UNREACHED_ARRAY_IDX = -1

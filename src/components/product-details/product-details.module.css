@@ -1,0 +1,103 @@
+.details {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 50px;
+    overflow-y:  auto;
+    grid-template-rows: auto auto 50px 50px 50px auto;
+    gap: 10px;
+    justify-content: stretch;
+}
+
+.modal {
+  position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.802);
+    backdrop-filter: blur(3px);
+    padding: 15px 50px;
+    overflow-y:  auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    border-radius: 15px;
+    background-color: black;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+      transition: all .2s ease-in-out;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    border-radius: 15px;
+    background-color: black;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+      transition: all .2s ease-in-out;
+}
+
+.description {
+    overflow-y: auto;
+   word-wrap: break-word;
+}
+
+.img {
+    justify-self: center;
+}
+
+.editWrapper {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px;
+    align-content: flex-end;
+    
+     gap:10px;
+}
+
+.editWrapper button {
+    background-color: transparent;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+.h2 {
+    font-size: 25px;
+}
+
+.input {
+    padding: 5px;
+     border-radius: 5px;
+      background-color: black;
+       color: white;
+}
+
+@media (any-pointer: fine) {
+    .editWrapper button:hover {
+       scale: 1.1;
+    }
+}
+
+@media (max-width: 560px) {
+    .h2 {
+font-size: 20px;
+    }
+    .details {
+        padding: 10px;
+    }
+
+    .closeButton, .deleteButton {
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+}

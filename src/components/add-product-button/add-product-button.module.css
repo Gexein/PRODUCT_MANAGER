@@ -1,0 +1,22 @@
+.button {
+      padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+   transition: all .2s ease-in-out;
+}
+
+.button:active {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.877);
+  }
+
+
+@media (any-pointer: fine) {
+  .button:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.877);
+  }
+}
+
